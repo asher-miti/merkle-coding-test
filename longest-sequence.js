@@ -14,6 +14,7 @@ let longestSequence = (sequence) => {
   let maxChar = 0;
   let result = {};
 
+  //   Find the maximum repeating character starting from 1st index and check it against it's previous entry
   for (let i = 1; i < sequence.length; i++) {
     if (sequence[i] == sequence[i - 1]) {
       count++;
