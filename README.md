@@ -25,9 +25,14 @@ I don't believe this to be the most optimal solution but it's the question I str
 signifcantly better when valInd is a small value
 
 *********
-3. I spent less time on this question once I figured out the initial logic to solving this using a while loop based on decrementing the numMonths each time by 1. By knowing how to
+3. Savings Account Balance
+I spent less time on this question once I figured out the initial logic to solving this using a while loop based on decrementing the numMonths each time by 1. By knowing how to
 calculate the percentages of the current sum using the provided rates and ensuring this runs according to the number of months before hitting 0, I believe the solution runs in O(n)
 time and O(1) space complexity.
 
 *********
-4.
+4. Recursive Reverse String
+My process and thinking here was to have the function take in the string as well as the string's length (n), and if the string's length is 0, to return an empty string in the first instance. If the string is not empty, the last character of the string will be added with the second to last character by calling the same function recursively. I believe time complexity for this is O(n) and as I am calling this function recursively, it will be stored in the call stack so space complexity is O(n).
+
+
+
