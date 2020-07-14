@@ -5,9 +5,9 @@
 // - otherwise, the result is a concatenation of the string parameter without the first letter, in reverse, and the first letter at the end
 
 // Example outputs:
-// reverseString( “abcb” ) === “bcba”
-// reverseString( “test” ) === “tset”
-// reverseString( “racecar” ) === “racecar”
+// reverseString( “abcb”, 4 ) === “bcba”
+// reverseString( “test”, 4 ) === “tset”
+// reverseString( “racecar”, 7 ) === “racecar”
 
 let reverseString = (string, n) => {
   if (n == 0) {

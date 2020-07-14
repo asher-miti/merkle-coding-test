@@ -3,9 +3,9 @@
 // If there is more than one element satisfying the requirements then the second smallest one (according to value) should be returned.
 
 // Example outputs:
-// secondLowest( [4, 3, 1, 1, 2] ) === 1
-// secondLowest( [4, 3, 1, 1, 2, 2] ) === 2
-// secondLowest( [4, 3, 1, 2] ) === 2
+// secondLowest( 1, 1, [4, 3, 1, 1, 2] ) === 1
+// secondLowest( 1, 1, [4, 3, 1, 1, 2, 2] ) === 2
+// secondLowest( 1, 1, [4, 3, 1, 2] ) === 2
 
 let lowestFreqVal = (freqInd, valInd, values) => {
   let map = new Map();
