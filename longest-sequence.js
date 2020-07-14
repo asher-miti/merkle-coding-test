@@ -11,21 +11,21 @@ let longestSequence = (sequence) => {
   sequence = sequence.toLowerCase();
   let count = 1;
   let max = 0;
-  let maxChar = 0;
-  let result = {};
+  let maxChars = [];
 
   //   Find the maximum repeating character starting from 1st index and check it against it's previous entry
-  for (let i = 1; i < sequence.length; i++) {
+  for (let i = 1; i <= sequence.length; i++) {
     if (sequence[i] == sequence[i - 1]) {
       count++;
     } else {
       if (count > max) {
         max = count;
-        maxChar = sequence[i - 1];
-      }
+        maxChars = [sequence[i - 1]];
+      } else if (count === max) maxChars.push(sequence[i - 1]);
       count = 1;
     }
   }
-  result[maxChar] = max;
-  return result;
+
+  let maxChar = maxChars.sort()[0];
+  return { [maxChar]: max };
 };

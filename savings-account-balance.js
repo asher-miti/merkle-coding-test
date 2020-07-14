@@ -16,6 +16,7 @@ let balance = (openingSum, interestRate, taxFreeLimit, taxRate, numMonths) => {
   while (numMonths !== 0) {
     let monthlyInterest = (openingSum * interestRate) / 100;
     let monthlyTax = 0;
+    // Incase of openingSum being less than taxFreeLimit
     if (openingSum > taxFreeLimit) {
       monthlyTax = ((openingSum - taxFreeLimit) * taxRate) / 100;
     }
